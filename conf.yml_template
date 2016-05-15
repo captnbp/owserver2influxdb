@@ -1,0 +1,19 @@
+interval: 300
+influxdb:
+  host: 
+  port: 8086
+  user: 
+  password: 
+  db: temperature
+owservers:
+  - region: 
+    hostname: 
+    owserver_host: 
+    owserver_port: 4304
+    sensors: 
+      - zone: salon
+        id: /28.2B0XXXXXXXXX
+      - zone: kitchen
+        id: /28.A0XXXXXXXXXX
+      - zone: ext
+        id: /28.XXXXXXXXXXXX
