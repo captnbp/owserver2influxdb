@@ -19,7 +19,7 @@ def get_config():
         print('Cannot read config file {} : {}'.format(config_file, err), file=sys.stderr)
         sys.exit(1)
     try:
-        config = yaml.load(stream)
+        config = yaml.safe_load(stream)
         stream.close()
     except yaml.YAMLError as err:
         if hasattr(err, 'problem_mark'):
